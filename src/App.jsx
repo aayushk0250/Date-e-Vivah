@@ -1,6 +1,7 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Glimpse from "./pages/Glimpse.jsx";
 
 export default function App() {
   const navigate = useNavigate();
@@ -40,10 +41,10 @@ export default function App() {
 
               <div className="mt-10 flex gap-4">
                 <button
-                  onClick={() => navigate("/register")}
+                  onClick={() => navigate("/Glimpse")}
                   className="px-8 py-3 rounded-full bg-pink-600 text-white text-lg hover:scale-105 transition"
                 >
-                  Start Dating
+                  Get a Glimpse
                 </button>
 
                 <button
@@ -126,9 +127,11 @@ export default function App() {
         }
       />
 
-      {/* AUTH ROUTES */}
+      {/* AUTH + PREVIEW ROUTES */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/glimpse" element={<Glimpse />} />
+
     </Routes>
   );
 }

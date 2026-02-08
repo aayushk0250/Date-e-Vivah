@@ -1,0 +1,8 @@
+.bg-gradient-modern {
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6,
+    #ec4899
+  );
+}
